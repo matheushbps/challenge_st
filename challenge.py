@@ -126,6 +126,20 @@ with st.expander("Abordagem para a modelagem", False):
   - `Semana do mês`
   """
 
+with st.expander("Ponto importantíssimo sobre a modelagem", False):
+   """Percebe-se que os dados de 2024-11-05 já foram dados, que são:
+   - `CBOT`,
+   - `Preço de mercado`,
+   - `Dólar (obtido no código)`.
+
+   
+   **No entanto, em um caso real, `esses dados não estariam disponíveis`, e para obtê-los, precisaríamos prevê-los com modelos de regressão, também baseados em séries temporais (ou técnicas mais avançadas)**.
+   
+   Em posse desses dados preditos, poderíamos alimentar o modelo presente no projeto atual.
+
+   **Perceba que em um mercado de grãos, tais como em mercados de ações, há muitas incertezas e portanto a predição do modelo aqui presente sendo alimentada por predições de regressão de outros modelos potencialmente adicionaria mais incertezas ao modelo final.**
+   """
+
 with st.expander("Abordagem para a predição", False):
   """
   ## Abordagem para a predição
