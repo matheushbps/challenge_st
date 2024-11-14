@@ -36,14 +36,12 @@ def check_password():
 if not check_password():
     st.stop()  # Do not continue if check_password is not True.
 
-
-
-# st.title("Grão Direto Challenge")
-
 # Descrever o projeto brevemente
-"""
-# Grão Direto IA Challenge
-"""
+col1, col2 = st.columns([8, 1])
+with col1:
+  st.write("# Grão Direto IA Challenge")
+with col2:
+  st.image('images/gd2.png', width=200)
 
 with st.expander("Análise exploratória e abordagens iniciais", False):
   """
